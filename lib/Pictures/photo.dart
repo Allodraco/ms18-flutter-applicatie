@@ -1,8 +1,7 @@
-//Deze pagina is de photo model pagina ,
-
+// Deze pagina is de photo model pagina
 class Photo {
   final String imageUrl;
-  final String title;
+  String title;
   final DateTime date;
   final String uploader;
   final int likeCount;
@@ -16,4 +15,21 @@ class Photo {
     required this.likeCount,
     required this.contentType,
   });
+
+  // Method to update the title
+  void updateTitle(String newTitle) {
+    title = newTitle;
+  }
+
+  // Factory constructor to create Photo from JSON
+  factory Photo.fromJson(Map<String, dynamic> json) {
+    return Photo(
+      imageUrl: json['imageUrl'],
+      title: json['title'],
+      date: DateTime.parse(json['date']),
+      uploader: json['uploader'],
+      likeCount: json['likeCount'],
+      contentType: json['contentType'],
+    );
+  }
 }
