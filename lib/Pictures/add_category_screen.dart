@@ -25,7 +25,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
 
   Future<http.Response?> _submit() async {
     return http.post(
-        Uri.parse('https://localhost:7059/api/albums'),
+        Uri.parse('http://10.0.2.2:5032/api/albums'),
         headers: getHeaders(),
         body: jsonEncode(<String, String>{
           'Name': _titleController.text,

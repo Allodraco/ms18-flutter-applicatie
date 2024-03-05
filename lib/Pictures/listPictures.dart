@@ -16,15 +16,15 @@ class ListPictures extends StatefulWidget {
 class _ListPicturesState extends State<ListPictures> {
   final List<Category> _allCategories = [
     Category(
-      title: 'Kerst eten 1',
+      title: 'Elder Test',
       date: DateTime(2011, 10, 11),
       photos: [
         Photo(
           imageUrl: 'https://picsum.photos/750/300?random=1',
-          title: 'Nieuwjaarsfeest',
+          title: 'Eldertestfeest',
           date: DateTime(2022, 1, 1),
-          uploader: 'Geupload door: Jan Jansen',
-          likeCount: 150,
+          uploader: 'Geupload door: Elder Test 1',
+          likeCount: 15000,
           contentType: "",
         ),
         Photo(
@@ -38,15 +38,15 @@ class _ListPicturesState extends State<ListPictures> {
       ],
       subAlbums: [
         Category(
-          title: 'Sub Album 1',
+          title: 'Elder',
           date: DateTime(2022, 1, 1),
           photos: [
             Photo(
               imageUrl: 'https://picsum.photos/750/300?random=1',
-              title: 'Nieuwjaarsfeest',
+              title: 'Elderelderelderelderelderelderelderelderelde',
               date: DateTime(2022, 1, 1),
               uploader: 'Geupload door: Jan Jansen',
-              likeCount: 150,
+              likeCount: 10000,
               contentType: "",
             ),
             Photo(
